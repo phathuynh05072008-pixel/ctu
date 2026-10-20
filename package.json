@@ -1,0 +1,9 @@
+{
+  "name": "orbit-probability-studio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Trang ôn tập xác suất thống kê theo đề cương trên bảng",
+  "scripts": { "start": "node server.mjs", "test": "node scripts/verify.mjs" },
+  "dependencies": { "katex": "0.16.22" }
+}

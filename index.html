@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="vi" data-theme="dark">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0a0f16"><meta name="description" content="Ôn tập xác suất thống kê theo đề cương: 13 chuyên đề, 130 bài tập có lời giải, 5 đề luyện.">
+  <title>ORBIT — Xác suất thống kê</title>
+  <script>try{document.documentElement.dataset.theme=localStorage.getItem('orbit-theme')||'dark'}catch{}</script>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%230b141c'/%3E%3Ctext x='20' y='72' fill='%23c5f478' font-size='70'%3E∑%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="vendor/katex/katex.min.css"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="diagrams.css">
+  <script defer src="vendor/katex/katex.min.js"></script><script defer src="vendor/katex/contrib/auto-render.min.js"></script>
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+ <a class="skip" href="#content">Đến nội dung</a>
+ <div id="shade" class="shade" hidden></div>
+ <aside class="sidebar" id="sidebar" aria-label="Điều hướng">
+  <a class="brand" href="#home"><span class="brand-symbol">∑</span><span>ORBIT<span class="brand-sub">PROBABILITY STUDIO</span></span></a>
+  <div class="course-pill"><span class="status-dot"></span> XÁC SUẤT THỐNG KÊ <span>01—02</span></div>
+  <div class="nav-label">KHÔNG GIAN HỌC TẬP</div>
+  <nav class="primary-nav">
+   <a href="#home" data-nav="home"><span class="nav-icon">◫</span>Tổng quan<span class="key">H</span></a>
+   <a href="#learn" data-nav="learn"><span class="nav-icon">⌘</span>Kiến thức cốt lõi</a>
+   <a href="#practice" data-nav="practice"><span class="nav-icon">✎</span>Ngân hàng bài tập<span class="nav-count">130</span></a>
+   <a href="#exams" data-nav="exams"><span class="nav-icon">◷</span>Đề luyện tổng hợp<span class="nav-count">05</span></a>
+  </nav>
+  <div class="nav-label syllabus-label">LỘ TRÌNH ÔN TẬP <span>13</span></div>
+  <nav id="lesson-nav" class="lesson-nav" aria-label="Chuyên đề"></nav>
+  <div class="sidebar-bottom"><div class="progress-title"><span>Tiến độ của bạn</span><b id="side-progress">0%</b></div><div class="progress-track"><i id="side-bar"></i></div><p id="side-caption">0 / 130 bài đã hoàn thành</p><a href="#sources">ⓘ Tài liệu & đối chiếu</a></div>
+ </aside>
+ <div class="workspace">
+  <header class="topbar"><div class="breadcrumb"><button class="icon-button menu-button" id="menu-toggle" aria-label="Mở menu" aria-expanded="false">☰</button><span class="muted">Không gian học tập</span><span class="slash">/</span><span id="page-label">Tổng quan</span></div><div class="header-actions"><span class="local-label"><span class="status-dot"></span> HỌC THEO NHỊP CỦA BẠN</span><button id="theme-toggle" class="icon-button" aria-label="Chuyển sang giao diện sáng" title="Đổi giao diện">☼</button><div class="avatar" aria-label="Không gian cá nhân">Σ</div></div></header>
+  <main id="content" tabindex="-1"></main>
+  <footer><span>ORBIT <span class="muted">/ Học để hiểu bản chất.</span></span><span>Chương 1 & 2 <span class="footer-dot">·</span> Dựa trên tài liệu của bạn</span></footer>
+ </div>
+ <div id="toast" role="status" class="toast"></div>
+</body>
+</html>
